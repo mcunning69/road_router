@@ -1,15 +1,35 @@
-# road-router
+# TEST ROAD_ROUTER PROJECT AND CREATE INSTALLER
 
-Set up development environment on Windows 10:
+# Download and install VS Code: https://code.visualstudio.com/download
 
-1.  Install QGIS 3 (default options)
-2.  Install Microsoft VS Code (default options)
-3.  Install Git (from VS Code) (default options)
-4.  Restart VS Code
-5.  Install Python 3 # (options: select Add Python 3.6 to PATH + disable 260 character path length limit)
-6.  Install Python Extension (from VS Code)
-7.  Select Python 3.6 environment (from VS Code)
-8.  Install Linter pylint (from VS Code)
-9.  Restart PC
-10. Start VS Code
-11. Run main.py
+# Download and install Python 3.x: https://www.python.org/downloads/
+# (select Add Python 3.x to PATH)
+
+# Create folder in MS Explorer --> "Hello"
+# Run VSCode
+# Select VS Code --> File --> Add Folder to Workspace --> "Hello"
+# Create file "hello.py" in folder Hello containing 'print("Hello World")'
+# Press Ctrl-S to save file
+# Right-click in file editor and select Run Python File in Terminal
+# If Hello World does not appear in terminal see: https://code.visualstudio.com/docs/languages/python
+
+# Open example project (road_router) folder in VSCode
+
+# Download and install Git within VS Code when prompted
+# Install the Python extension when prompted
+# Status bar --> Select Python Interpreter --> Python 3.7.x 64-bit
+# Install Linter pylint when prompted
+
+# Install Python packages for road_router
+pip install matplotlib
+pip install dijkstar
+
+# Run main.py in VSCode
+
+# Create executable
+pip install pyinstaller
+pyinstaller --clean --onefile --windowed --distpath . --name road_router.exe main.py
+# road_router.exe needs Input Data and Output Data as subfolders to work
+
+# Install and run NSIS
+# Compile road_router.nsi to install files to Desktop
